@@ -1,0 +1,22 @@
+{
+  "name": "cypress-e2e-framework",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:runRecord": "cypress run --record --key bbc9683a-cd57-4fbc-a843-9b233d0f9cc6",
+    "cypress:runDefault": "cypress run --spec cypress/e2e/1-getting-started/todo.cy.js",
+    "cypress:runChrome": "cypress run --headed --browser chrome --spec cypress/e2e/1-getting-started/todo.cy.js",
+    "cypress:runChromeMochawesome": "cypress run --browser chrome --spec cypress/e2e/pom/*.cy.js",
+    "cypress:runChromeHeadless": "cypress run --headless --browser chrome --spec cypress/e2e/pom/*.cy.js --record --key bbc9683a-cd57-4fbc-a843-9b233d0f9cc6"
+  },
+  "devDependencies": {
+    "cypress": "^15.20.1",
+    "cypress-mochawesome-reporter": "^5.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "demo-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node app.js",
+    "test:dev": "cypress open --env targetEnv=dev",
+    "test:qa": "cypress open --env targetEnv=qa",
+    "test:prod": "cypress open --env targetEnv=prod",
+    "build": "npm run test && npm run dev"
+  },
+  "devDependencies": {
+    "cypress": "^15.20.1"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "botbc-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "// --- EJECUCIÓN EN MODO UI (cypress open) ---": "",
+    "cy:qa": "cypress open --env targetEnv=qa",
+    "cy:prod": "cypress open --env targetEnv=prod",
+    "build": "npm run test && npm run dev",
+    "// --- EJECUCIÓN EN MODO HEADLESS / CONSOLA (cypress run) ---": "",
+    "cy:run:qa": "cypress run --env targetEnv=qa",
+    "cy:run:chromeMochawesome": "cypress run --browser chrome --spec cypress/e2e/store.cy.js --env takeScreenshots=true",
+    "cy:run:prod": "cypress run --env targetEnv=prod"
+  },
+  "devDependencies": {
+    "cypress": "^16.1.0",
+    "cypress-mochawesome-reporter": "^5.0.0"
+  }
+}

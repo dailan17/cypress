@@ -1,0 +1,20 @@
+{
+    "baseUrl": "https://qabc.bigotires.com",
+    "users": [
+        {
+            "type": "admin",
+            "username": "dguzman",
+            "password": "DGuzman1!"
+        },
+        {
+            "type": "",
+            "username": "",
+            "password": ""
+        }
+    ],
+    "stores": [
+        {
+            "number": "003002"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "baseUrl": "https://businesscenter.bigotires.com",
+    "users": [
+        {
+            "type": "admin",
+            "username": "dguzman",
+            "password": "DGuzman1!"
+        },
+        {
+            "type": "",
+            "username": "",
+            "password": ""
+        }
+    ]
+}
